@@ -55,3 +55,15 @@ LGD^DT is estimated from default events during stress periods (GFC / COVID).
 ---
 
 ## How to Run
+
+---
+
+## 📊 Sample Outputs
+
+### Stressed PD Time Series
+
+![Stressed PD](docs/Q3_avg_stressed_PD_timeseries.png)
+
+### Aggregate UL Surface (2025Q4)
+
+![Aggregate UL](docs/Q10_3D_aggregate_UL.png)
