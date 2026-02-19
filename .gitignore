@@ -1,5 +1,11 @@
 __pycache__/
 *.pyc
 outputs/
-*.png
 data/
+
+# 不要忽略 docs 里的展示图片
+!docs/
+!docs/*.png
+
+# 只忽略 outputs 里的 png
+outputs/*.png
