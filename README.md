@@ -19,6 +19,50 @@ Main components include:
 
 ---
 
+## 📂 Project Structure
+
+```
+Credit-Risk-Stress-Testing/
+│
+├── src/                # Core modeling & stress testing logic
+├── docs/               # Sample output visualizations
+├── data/               # Input datasets (ignored in repo)
+├── outputs/            # Generated outputs (ignored in repo)
+├── requirements.txt    # Python dependencies
+└── README.md
+```
+
+---
+
+## ⚙ System Design
+
+The project follows a multi-stage processing pipeline:
+
+1. Obligor-level PD aggregation
+2. TTC PD construction
+3. Basel Vasicek stress transformation
+4. Facility-level UL computation
+5. Rating-level aggregation
+6. Visualization layer
+
+### Data Flow
+
+Obligor Panel  
+→ Merge with Facility Data  
+→ Stress Mapping (Vasicek)  
+→ UL Calculation  
+→ Rating Aggregation  
+→ Plot Generation
+
+### Architecture Separation
+
+- `src/` — Core computation & modeling logic
+- `docs/` — Sample visualization outputs
+- `outputs/` — Auto-generated results (ignored in repo)
+- `data/` — Input datasets (excluded from version control)
+
+---
+
 ## Methodology
 
 ### TTC PD
@@ -54,7 +98,14 @@ LGD^DT is estimated from default events during stress periods (GFC / COVID).
 
 ---
 
-## How to Run
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/YuyangZ1/Credit-Risk-Stress-Testing.git
+cd Credit-Risk-Stress-Testing
+
+pip install -r requirements.txt
+python src/main.py
 
 ---
 
@@ -67,3 +118,4 @@ LGD^DT is estimated from default events during stress periods (GFC / COVID).
 ### Aggregate UL Surface (2025Q4)
 
 ![Aggregate UL](docs/Q10_3D_aggregate_UL.png)
+```
