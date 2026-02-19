@@ -98,6 +98,8 @@ LGD^DT is estimated from default events during stress periods (GFC / COVID).
 
 ---
 
+---
+
 ## 🚀 How to Run
 
 ```bash
@@ -105,7 +107,8 @@ git clone https://github.com/YuyangZ1/Credit-Risk-Stress-Testing.git
 cd Credit-Risk-Stress-Testing
 
 pip install -r requirements.txt
-python src/main.py
+python3 src/main.py
+```
 
 ---
 
@@ -118,4 +121,3 @@ python src/main.py
 ### Aggregate UL Surface (2025Q4)
 
 ![Aggregate UL](docs/Q10_3D_aggregate_UL.png)
-```
