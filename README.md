@@ -68,7 +68,7 @@ Obligor Panel
 ### TTC PD
 
 Time-averaged PD per obligor:
-PD_TTC = average(PD over time)
+PD_TTC = average(PD_t)
 
 ### Basel Stressed PD (Vasicek Mapping)
 
@@ -82,7 +82,7 @@ Where:
 
 ### Unexpected Loss (Facility Level)
 
-UL = EAD × LGD^DT × (PD_stress − PD_TTC)
+UL_i = EAD_i × LGD_DT × (PD_stress − PD_TTC)
 
 LGD^DT is estimated from default events during stress periods (GFC / COVID).
 
